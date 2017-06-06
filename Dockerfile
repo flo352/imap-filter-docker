@@ -1,7 +1,3 @@
-FROM debian:jessie-backports
-
-RUN git clone https://github.com/rbenv/ruby-build.git
-RUN bash cd ruby-build
-RUN bash ./install.sh
+FROM ruby:2.2
 RUN gem install imap-filter
     
